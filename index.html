@@ -9,56 +9,63 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
-    <h1 class="text-3xl text-red-700 font-bold underline">
+<body class="bg-cyan-200 text-center">
+    <header class="bg-cyan-300">
+    <h1 class="text-3xl text-sky-500 italic font-bold underline mb-5 pt-5">
       Jovince
     </h1>
-
-    <button id="switch">Switch</button>
-    <header>
-        <nav>
-            <span>@hxsdmark</span>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+        <nav class="flex justify-between ms-20 me-20">
+            <span>@jovince2004</span>
+            <ul class="flex gap-10">
+                <li><a href="#projects" class="duration-300 hover:text-orange-300">Projects</a></li>
+                <li><a href="#services" class="duration-300 hover:text-orange-300">Services</a></li>
+                <li><a href="#contact" class="duration-300 hover:text-orange-300">Contact Me</a></li>
             </ul>
         </nav>
     </header>
-
-    <main>
-        <section id="projects"> 
-            <h2 class="projects">My Projects</h2>
+<button id="switch" class="bg-sky-400 text-white mt-5 ps-2 pe-2 border-none rounded-xl hover:bg-orange-300 duration-500">Switch</button>
+    
+    <main class="flex text-wrap gap-10 p-10 m-10">
+        <section id="projects" class="flex-3 min-w-50 border-2 border-solid p-10 bg-cyan-300">
+            <h2 class="projects font-bold">My Projects</h2>
             <p>Personal portfolio, payroll system, company website, startup website, and compliance monitoring system.
             </p>
         </section>
 
-        <section id="services">
-            <h2 class="services">My Services</h2>
+        <section id="services" class="flex-3 min-w-50 border-2 border-solid p-10 bg-cyan-300">
+            <h2 class="services font-bold">My Services</h2>
             <p>Website Creation, System Creation, AI Automation, Database Management, Project Management, Systems
                 Analyst</p>
         </section>
 
-        <section id="contact">
-            <h2 class="contact">Let's build together!</h2>
-            <form action="#">
+        <section id="contact" class="flex-3 min-w-50  border-2 border-solid p-10 bg-cyan-300">
+            <h2 class="contact font-bold">Let's build together!</h2>
+            <form action="#" class="flex flex-col gap-5">
                 <!-- Name -->
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required class="border-solid border-2">
 
                 <!-- Email -->
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" required class="border-solid border-2">
 
                 <!-- Message -->
                 <label for="message">Message</label>
-                <textarea name="message" id="message" rows="5" required></textarea>
+                <textarea name="message" id="message" rows="5" required class="border-solid border-2"></textarea>
 
                 <!-- Submit -->
-                <button type="submit">Send Message</button>
+                <button type="submit" class=" bg-sky-400 text-white ps-24 pe-24 border-none rounded-xl hover:bg-green-500 duration-1000">Send Message</button>
             </form>
         </section>
+
+        
     </main>
+
+    <footer class="bg-cyan-300">
+            <h1 class="text-3xl text-sky-500 italic font-bold underline mt-5 pb-5 pt-5">
+                !!Perpek nani Sir!!
+            </h1>
+        </footer>
 
     <!-- <script src="script.js"></script> -->
 </body>
